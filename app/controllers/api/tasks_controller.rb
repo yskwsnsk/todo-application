@@ -1,7 +1,7 @@
 class Api::TasksController < ApplicationController
     # GET /tasks
     def index
-        @tasks = Task.order('update_at DESC')
+        @tasks = Task.order('updated_at DESC')
     end
 
     def create
